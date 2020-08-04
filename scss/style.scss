@@ -4,6 +4,7 @@ $black: #212121;
 $blue: #2196F3;
 $grey: #757575;
 $grey_bg: #F5F4FA;
+$footer_bg: #2F303A;
 $black_shadow: rgba(0, 0, 0, 0.15);
 
 .container {
@@ -68,11 +69,11 @@ a {
     padding: 120px 0;
 
     &__wrapper {
-        flex-direction: column; 
+        flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
-       
+
     }
 
     &__description {
@@ -100,6 +101,7 @@ a {
         padding: 10px 32px;
     }
 }
+
 .benefits {
     display: flex;
     justify-content: center;
@@ -108,6 +110,7 @@ a {
 
 .benefit {
     margin-bottom: 30px;
+
     &__img-block {
         img {
             width: 70px;
@@ -141,6 +144,19 @@ a {
     }
 }
 
+
+.section-title {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $black;
+}
+
 .team {
     background-color: $grey_bg;
     font-family: 'Roboto', sans-serif;
@@ -155,15 +171,7 @@ a {
         flex-direction: column;
     }
 
-    &__title {
-        color: $black;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 33px;
-        letter-spacing: 0.03em;
-        margin-bottom: 30px;
-    }
+   
 
     &-card {
         display: flex;
@@ -211,14 +219,44 @@ a {
 }
 
 .regular-customers {
+    background-color: #FFFFFF;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__list {
         width: 100%;
-        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-    &__list a{
-        width: 400px;
+
+    &__list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 43.75vw;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
+        margin-bottom: 30px;
+
+        &:hover {
+            border: 1px solid $blue;
+        }
+    }
+
+    &__list a {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        width: 100%;
     }
 
 }
+
