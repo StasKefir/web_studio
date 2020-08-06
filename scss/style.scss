@@ -17,16 +17,29 @@ a {
 }
 
 .menu {
+    display: flex;
+    justify-content: center;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__burger {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     &__line {
-        display: inline-block;
-        background-color: $black;
+        background-color: $blue;
         width: 24px;
         height: 2px;
         font-family: 'Raleway', sans-serif;
 
         &::before {
             content: '';
-            display: inline-block;
+            display:block;
             background-color: $black;
             width: 24px;
             height: 2px;
@@ -34,12 +47,10 @@ a {
 
         &::after {
             content: '';
-            display: inline-block;
+            display:block;
             background-color: $black;
             width: 24px;
             height: 2px;
-            margin: 0;
-            padding: 0;
         }
     }
 
@@ -374,6 +385,9 @@ a {
     }
 
     &__subscribe-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: #2196F3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
@@ -385,5 +399,14 @@ a {
         font-weight: bold;
         color: #FFFFFF;
         padding: 10px 29px;
+    }
+    &__subscribe-btn:after {
+        display: block;
+        content: "";
+        height: 24px;
+        width: 24px;
+        background-image: url(../icons/footer__subscribe-btn-icon.svg);
+        background-size: contain;
+        margin-left: 10px;
     }
 }
