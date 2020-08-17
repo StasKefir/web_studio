@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap');
 
-$black: #212121;
-$blue: #2196F3;
-$grey: #757575;
-$grey_bg: #F5F4FA;
-$footer_bg: #2F303A;
-$white: #fff;
-$black_shadow: rgba(0, 0, 0, 0.15);
+$primary-text-color: #212121;
+$accent-color: #2196F3;
+$secondary-text-color: #757575;
+$grey-bg: #F5F4FA;
+$footer-bg: #2F303A;
+$white-color: #fff;
+$black-shadow-color: rgba(0, 0, 0, 0.15);
 
 .container {
     width: 93.75vw;
@@ -32,7 +32,7 @@ a {
     }
 
     &__line {
-        background-color: $blue;
+        background-color: $accent-color;
         width: 24px;
         height: 2px;
         font-family: 'Raleway', sans-serif;
@@ -40,7 +40,7 @@ a {
         &::before {
             content: '';
             display:block;
-            background-color: $black;
+            background-color: $primary-text-color;
             width: 24px;
             height: 2px;
         }
@@ -48,7 +48,7 @@ a {
         &::after {
             content: '';
             display:block;
-            background-color: $black;
+            background-color: $primary-text-color;
             width: 24px;
             height: 2px;
         }
@@ -62,7 +62,7 @@ a {
         font-weight: bold;
 
         &_blue {
-            color: $blue;
+            color: $accent-color;
         }
     }
 }
@@ -73,7 +73,7 @@ a {
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/oder-a-service-bg.jpg);
     background-size: cover;
-    background-color: $black_shadow;
+    background-color: $black-shadow-color;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -95,7 +95,7 @@ a {
         text-transform: uppercase;
         letter-spacing: 0.06em;
         font-weight: bold;
-        color: $white;
+        color: $white-color;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -105,9 +105,9 @@ a {
         line-height: 30px;
         font-weight: bold;
         letter-spacing: 0.06em;
-        color:  $white;
-        background: $blue;
-        box-shadow: 0px 4px 4px $black_shadow;
+        color:  $white-color;
+        background: $accent-color;
+        box-shadow: 0px 4px 4px $black-shadow-color;
         border-radius: 4px;
         border: none;
         padding: 10px 32px;
@@ -129,7 +129,7 @@ a {
             height: 70px;
         }
 
-        background: $grey_bg;
+        background: $grey-bg;
         border-radius: 4px;
         padding: 25px 0;
         display: flex;
@@ -142,7 +142,7 @@ a {
         letter-spacing: 0.03em;
         font-size: 14px;
         line-height: 16px;
-        color: $black;
+        color: $primary-text-color;
         text-align: center;
         margin: 30px 0 10px 0;
     }
@@ -152,7 +152,7 @@ a {
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: $grey;
+        color: $secondary-text-color;
     }
 }
 
@@ -166,11 +166,11 @@ a {
     line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $black;
+    color: $primary-text-color;
 }
 
 .team {
-    background-color: $grey_bg;
+    background-color: $grey-bg;
     font-family: 'Roboto', sans-serif;
     padding: 60px 0 30px 0;
     display: flex;
@@ -192,7 +192,7 @@ a {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         margin-bottom: 30px;
-        background-color: $white;
+        background-color: $white-color;
 
         &__img-block {
             margin-bottom: 30px;
@@ -208,7 +208,7 @@ a {
             font-size: 16px;
             line-height: 19px;
             font-weight: 500;
-            color: $black;
+            color: $primary-text-color;
             margin-bottom: 10px;
         }
 
@@ -216,7 +216,7 @@ a {
             font-size: 16px;
             line-height: 19px;
             font-weight: normal;
-            color: $grey;
+            color: $secondary-text-color;
             margin-bottom: 16px;
         }
 
@@ -231,7 +231,7 @@ a {
 }
 
 .regular-customers {
-    background-color: $white;
+    background-color: $white-color;
     padding-top: 60px;
     display: flex;
     justify-content: center;
@@ -259,7 +259,7 @@ a {
         margin-bottom: 30px;
 
         &:hover {
-            border: 1px solid $blue;
+            border: 1px solid $accent-color;
         }
     }
 
@@ -274,7 +274,7 @@ a {
 
 .footer {
 
-    background-color: $footer_bg;
+    background-color: $footer-bg;
     display: flex;
     justify-content: center;
     padding: 60px 0;
@@ -292,12 +292,12 @@ a {
         line-height: 28px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: $white;
+        color: $white-color;
         margin-bottom: 20px;
     }
 
     &__logo-left {
-        color: $blue;
+        color: $accent-color;
     }
 
     &__adress {
@@ -327,7 +327,7 @@ a {
     &__location {
         font-size: 14px;
         line-height: 24px;
-        color: $white;
+        color: $white-color;
         margin-bottom: 8px;
     }
 
@@ -361,7 +361,7 @@ a {
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: $white;
+        color: $white-color;
         margin-bottom: 20px;
     }
 

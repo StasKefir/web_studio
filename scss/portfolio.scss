@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap');
 
-$black: #212121;
-$blue: #2196F3;
-$grey: #757575;
-$grey_bg: #F5F4FA;
-$footer_bg: #2F303A;
-$white: #fff;
-$black_shadow: rgba(0, 0, 0, 0.15);
+$primary-text-color: #212121;
+$accent-color: #2196F3;
+$secondary-text-color: #757575;
+$grey-bg: #F5F4FA;
+$footer-bg: #2F303A;
+$white-color: #fff;
+$black-shadow-color: rgba(0, 0, 0, 0.15);
 
 .container {
     width: 93.75vw;
@@ -32,7 +32,7 @@ a {
     }
 
     &__line {
-        background-color: $blue;
+        background-color: $accent-color;
         width: 24px;
         height: 2px;
         font-family: 'Raleway', sans-serif;
@@ -40,7 +40,7 @@ a {
         &::before {
             content: '';
             display:block;
-            background-color: $black;
+            background-color: $primary-text-color;
             width: 24px;
             height: 2px;
         }
@@ -48,7 +48,7 @@ a {
         &::after {
             content: '';
             display:block;
-            background-color: $black;
+            background-color: $primary-text-color;
             width: 24px;
             height: 2px;
         }
@@ -62,7 +62,7 @@ a {
         font-weight: bold;
 
         &_blue {
-            color: $blue;
+            color: $accent-color;
         }
     }
 }
@@ -70,24 +70,78 @@ a {
 .filter {
     display: flex;
     justify-content: center;
+    padding: 60px 0 40px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $primary-text-color;
+    letter-spacing: 0.03em;
 
     &__container {
         display: flex;
         justify-content: center;
     }
 
+    &__list {
+        display: flex;
+        justify-content: flex-start; 
+        flex-wrap: wrap;
+    }
+
     &__item {
         padding: 6px 22px;
-        color: $black;
-        background-color: $grey_bg;
+        margin: 0 8px 15px 0;
+        color: $primary-text-color;
+        background-color: $grey-bg;
         border-radius: 4px;
     }
 
+    &__item_active {
+        color: $white-color;
+        background-color: $accent-color;
+    }
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    font-family: 'Roboto', sans-serif;
+
+    &-list__item {
+        border: 1px solid #EEEEEE;
+        margin-bottom: 30px;
+    }
+
+    &-list__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 36px;
+        margin: 20px 0 4px 24px;
+        color: $primary-text-color;
+        letter-spacing: 0.06em;
+    }
+    &-list__category {
+        margin: 20px 0 0 24px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: $secondary-text-color;
+    }
 }
 
 
 .footer {
-    background-color: $footer_bg;
+    background-color: $footer-bg;
     display: flex;
     justify-content: center;
     padding: 60px 0;
@@ -105,12 +159,12 @@ a {
         line-height: 28px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: $white;
+        color: $white-color;
         margin-bottom: 20px;
     }
 
     &__logo-left {
-        color: $blue;
+        color: $accent-color;
     }
 
     &__adress {
@@ -140,7 +194,7 @@ a {
     &__location {
         font-size: 14px;
         line-height: 24px;
-        color: $white;
+        color: $white-color;
         margin-bottom: 8px;
     }
 
@@ -174,7 +228,7 @@ a {
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: $white;
+        color: $white-color;
         margin-bottom: 20px;
     }
 
