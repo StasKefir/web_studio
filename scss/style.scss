@@ -19,6 +19,7 @@ a {
 .menu {
     display: flex;
     justify-content: center;
+    padding: 16px 0 16px 0;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -26,31 +27,36 @@ a {
     }
 
     &__burger {
+        position: relative;
         display: block;
-        flex-direction: column;
-        justify-content: center;
+        width: 5%;
+        height: 100%;
     }
 
     &__line {
-        background-color: $accent-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        background-color: $primary-text-color;
         width: 24px;
         height: 2px;
         font-family: 'Raleway', sans-serif;
 
-        &::before {
+        &::before, &::after{
             content: '';
-            display:block;
-            background-color: $primary-text-color;
+            position: absolute;
             width: 24px;
             height: 2px;
+            background-color:$primary-text-color ;
+        }
+        &::before {
+            transform: translateY(-4px);
         }
 
         &::after {
-            content: '';
-            display:block;
-            background-color: $primary-text-color;
-            width: 24px;
-            height: 2px;
+            transform: translateY(4px);
         }
     }
 
