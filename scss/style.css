@@ -3,6 +3,12 @@
   width: 93.75vw;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 96.093vw;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -39,7 +45,9 @@ a {
   cursor: pointer;
 }
 
-.menu__burger:hover .menu__line, .menu__burger:hover .menu__line::before, .menu__burger:hover .menu__line::after {
+.menu__burger:hover .menu__line,
+.menu__burger:hover .menu__line::before,
+.menu__burger:hover .menu__line::after {
   background-color: #2196F3;
 }
 
@@ -185,20 +193,93 @@ a {
   width: 60px;
 }
 
-.menu__link a:hover, .menu__link a:focus {
+.menu__link a:hover,
+.menu__link a:focus {
   color: #2196F3;
 }
 
 .menu__adress {
   color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__adress:nth-child(1) {
   margin-bottom: 16px;
 }
 
+.menu__adress-mail::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  background-image: url(../icons/menu__letter.svg);
+}
+
+.menu__adress-phone::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
+  background-image: url(../icons/menu__smartphone.svg);
+}
+
 .menu__link a:hover .menu__link a::after {
   height: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__burger {
+    display: none;
+  }
+  .menu__popup {
+    position: static;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .menu__popup_disable {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menu__addresses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .order-service {
@@ -261,6 +342,12 @@ a {
   padding: 10px 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .order-service__description {
+    width: 46.875vw;
+  }
+}
+
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +398,25 @@ a {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefit {
+    width: 47.96%;
+  }
+  .benefit__title {
+    text-align: left;
+  }
+}
+
 .section-title {
   margin-bottom: 30px;
   font-family: Roboto;
@@ -335,7 +441,7 @@ a {
           justify-content: center;
 }
 
-.team .container {
+.team__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,6 +522,33 @@ a {
   margin-bottom: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .team__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team-card {
+    width: 47.96%;
+  }
+  .team-card__img-block img {
+    width: 100%;
+  }
+  .team-card__social {
+    width: 31.51vw;
+  }
+}
+
 .regular-customers {
   background-color: #fff;
   padding-top: 60px;
@@ -481,6 +614,12 @@ a {
           justify-content: center;
   padding: 20px 0;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .regular-customers__list-item {
+    width: 29.427vw;
+  }
 }
 
 .footer {
@@ -665,5 +804,29 @@ a {
   background-image: url(../icons/footer__subscribe-btn-icon.svg);
   background-size: contain;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__adress, .footer__social {
+    width: 48%;
+  }
+  .footer__subscribe {
+    width: 58.59vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
