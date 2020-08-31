@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
     <link rel="stylesheet" href="./scss/reset.css">
+    <link rel="stylesheet" href="./scss/common.css">
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
     <header class="menu">
-        <div class="container menu__container">
-            <div class="menu__logo">
-                <h2 class="menu__text"> <span class="menu__text_blue">Web </span>Studio</h2>
+        <div class="container">
+            <div class="menu__container">
+                <div class="menu__logo">
+                    <h2 class="menu__text"> <span class="menu__text_blue">Web </span>Studio</h2>
+                </div>
+                <div class="menu__burger">
+                    <span class="menu__line"></span>
+                </div>
             </div>
-            <div class="menu__burger">
-                <span class="menu__line"></span>
-            </div>
-        </div>
-        <div class="menu__popup menu__popup_disable">
-            <ul class="menu__list">
-                <li class="menu__link"><a href="">Студия</a></li>
-                <li class="menu__link"><a href="">Портфолио</a></li>
-                <li class="menu__link"><a href="">Контакты</a></li>
-            </ul>
-            <div class="menu__adresses">
-                <p class="menu__adress menu__adress-mail">info@devstudio.com</p>
-                <p class="menu__adress menu__adress-phone">+38 096 111 11 11</p>
+            <div class="menu__popup menu__popup_disable">
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="">Студия</a></li>
+                    <li class="menu__link"><a href="">Портфолио</a></li>
+                    <li class="menu__link"><a href="">Контакты</a></li>
+                </ul>
+                <div class="menu__adresses">
+                    <p class="menu__adress menu__adress-mail">info@devstudio.com</p>
+                    <p class="menu__adress menu__adress-phone">+38 096 111 11 11</p>
+                </div>
             </div>
         </div>
     </header>
@@ -98,10 +101,14 @@
                             <h3 class="team-card__title">Николай Кучеренко</h3>
                             <p class="team-card__position">Product Designer</p>
                             <ul class="team-card__social">
-                                <li><a href=""> <img src="./icons/team__instagram.svg" alt="" class="team-card__icon"></a></li>
-                                <li><a href=""> <img src="./icons/team__twitter.svg" alt="" class="team-card__icon"></a></li>
-                                <li><a href=""> <img src="./icons/team__facebook.svg" alt="" class="team-card__icon"></a></li>
-                                <li> <a href=""><img src="./icons/team__linkedin.svg" alt="" class="team-card__icon"></a></li>
+                                <li><a href=""> <img src="./icons/team__instagram.svg" alt=""
+                                            class="team-card__icon"></a></li>
+                                <li><a href=""> <img src="./icons/team__twitter.svg" alt="" class="team-card__icon"></a>
+                                </li>
+                                <li><a href=""> <img src="./icons/team__facebook.svg" alt=""
+                                            class="team-card__icon"></a></li>
+                                <li> <a href=""><img src="./icons/team__linkedin.svg" alt=""
+                                            class="team-card__icon"></a></li>
                             </ul>
                         </div>
                     </li>
