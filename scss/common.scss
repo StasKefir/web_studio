@@ -18,6 +18,11 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 73.125vw;
+    }
+}
 a {
     text-decoration: none;
 }

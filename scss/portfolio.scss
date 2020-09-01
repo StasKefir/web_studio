@@ -1,3 +1,10 @@
+$primary-text-color: #212121;
+$accent-color: #2196F3;
+$secondary-text-color: #757575;
+$grey-bg: #F5F4FA;
+$footer-bg: #2F303A;
+$white-color: #fff;
+$black-shadow-color: rgba(0, 0, 0, 0.15);
 
 .filter {
     display: flex;
@@ -69,4 +76,21 @@
         line-height: 30px;
         color: $secondary-text-color;
     }
+}
+@media screen and (min-width: 768px) {
+    .works-list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__item {
+            display: inline-block;
+            width: 47.96%;
+
+            img{
+                width: 100%;
+            };
+        }
+    }
+
 }

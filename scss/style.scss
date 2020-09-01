@@ -1,3 +1,10 @@
+$primary-text-color: #212121;
+$accent-color: #2196F3;
+$secondary-text-color: #757575;
+$grey-bg: #F5F4FA;
+$footer-bg: #2F303A;
+$white-color: #fff;
+$black-shadow-color: rgba(0, 0, 0, 0.15);
 
 .order-service {
     // height: 400px;
@@ -113,10 +120,10 @@
     }
 }
 
-
+// /////////////////////
 .section-title {
     margin-bottom: 30px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -125,6 +132,66 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
+// //////////////////
+.we-do {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &-item {
+            width: 31.623%;
+            height: 294px;
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+
+            &_desktop {
+                background-image: url(../img/we-do_desktop.jpg);
+            }
+            &_mobile {
+                background-image: url(../img/we-do__mobile.jpg);
+            }
+            &_design {
+                background-image: url(../img/we-do_design.jpg);
+            }
+        
+        }
+
+    }
+
+    &__item-desc {
+        width: 100%;
+        padding: 27px 0 27px 0;
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+    &__item-text {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+
+   
+}
+
+
+
 
 .team {
     background-color: $grey-bg;
