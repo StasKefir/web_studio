@@ -61,6 +61,17 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .order-service {
+        &__description {
+            width: 59.487%;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+        }
+    }
+}
+
 .benefits {
     display: flex;
     justify-content: center;
@@ -120,6 +131,12 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
     }
 }
 
+@media screen and (min-width: 1600px) {
+
+    .benefit {
+        width: 23.076%;
+    }
+}
 // /////////////////////
 .section-title {
     margin-bottom: 30px;
@@ -134,7 +151,7 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
 }
 // //////////////////
 .we-do {
-    display: flex;
+    display: none;
     justify-content: center;
 
     &__container {
@@ -189,6 +206,12 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
 
    
 }
+@media screen and (min-width: 1600px) {
+    .we-do {
+        display: flex;
+    }
+}
+
 
 
 
@@ -226,6 +249,7 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
 
         &__title {
@@ -245,7 +269,7 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
         }
 
         &__social {
-            width: 42.91vw;
+            width: 45.77%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -273,7 +297,24 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
             }
 
             &__social {
-                width: 31.51vw;
+                width: 58.19%;
+            }
+            &__img-block {
+                width: 100%;
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .team {
+        &-card {
+            width: 23.076%;
+
+            &__social {
+                width: 89.62%;
             }
         }
 
@@ -332,4 +373,13 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
         }
     }
 }
+@media screen and (min-width: 1600px) { 
+    .regular-customers {
+
+        &__list-item {
+            width: 14.52%;
+        }
+    }
+}
+
 

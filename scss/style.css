@@ -64,6 +64,15 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .order-service__description {
+    width: 59.487%;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +142,12 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .benefit {
+    width: 23.076%;
+  }
+}
+
 .section-title {
   margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
@@ -146,9 +161,7 @@
 }
 
 .we-do {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -219,6 +232,14 @@
   color: #fff;
 }
 
+@media screen and (min-width: 1600px) {
+  .we-do {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .team {
   background-color: #F5F4FA;
   font-family: 'Roboto', sans-serif;
@@ -280,6 +301,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .team-card__title {
@@ -299,7 +321,7 @@
 }
 
 .team-card__social {
-  width: 42.91vw;
+  width: 45.77%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +357,19 @@
     width: 100%;
   }
   .team-card__social {
-    width: 31.51vw;
+    width: 58.19%;
+  }
+  .team-card__img-block {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .team-card {
+    width: 23.076%;
+  }
+  .team-card__social {
+    width: 89.62%;
   }
 }
 
@@ -409,6 +443,12 @@
 @media screen and (min-width: 768px) {
   .regular-customers__list-item {
     width: 29.427vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .regular-customers__list-item {
+    width: 14.52%;
   }
 }
 /*# sourceMappingURL=style.css.map */
