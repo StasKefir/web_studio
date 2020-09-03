@@ -160,6 +160,14 @@
   color: #212121;
 }
 
+@media screen and (min-width: 1600px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+}
+
 .we-do {
   display: none;
   -webkit-box-pack: center;
@@ -364,7 +372,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team-card {
     width: 23.076%;
   }
@@ -447,6 +455,9 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .regular-customers__list {
+    padding-bottom: 64px;
+  }
   .regular-customers__list-item {
     width: 14.52%;
   }

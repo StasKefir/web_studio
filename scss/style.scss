@@ -149,6 +149,15 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
+@media screen and (min-width: 1600px) {
+    .section-title {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 50px;
+    }
+    
+}
+
 // //////////////////
 .we-do {
     display: none;
@@ -308,7 +317,7 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     .team {
         &-card {
             width: 23.076%;
@@ -375,7 +384,9 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 1600px) { 
     .regular-customers {
-
+        &__list {
+            padding-bottom: 64px;
+        }
         &__list-item {
             width: 14.52%;
         }

@@ -417,17 +417,23 @@ a {
         flex-direction: column;
         align-items: center;
 
+    } 
+    &__input-group {
+        width: 100%;
+        text-align: center;
     }
 
     &__subscribe-input {
         width: calc(100% - 16px);
-        height: 50px;
+        height: 46px;
         background: #2F303A;
+        color: $white-color;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         padding-left: 16px;
         margin-bottom: 20px;
+        
     }
 
     &__subscribe-btn {
@@ -474,6 +480,40 @@ a {
 
         &__subscribe {
             width: 58.59vw;
+        }
+
+        &__input-group {
+        width: 100%;
+        }
+    }
+}
+@media screen and (min-width: 1600px) {
+    .footer {
+        &__container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__contact {
+            width: 50%;
+        }
+
+        &__adress, &__social {
+            width: 48%;
+        }
+
+        &__subscribe {
+            width: 48.717%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &__input-group {
+            width: 62.807%;
+        }
+
+        &__subscribe-input {
+            margin-bottom: 0px;
         }
     }
 }
