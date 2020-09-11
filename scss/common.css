@@ -466,6 +466,10 @@ a {
   margin: 0 5px;
 }
 
+.footer__social-item:hover, .footer__social-item:focus {
+  background-color: #2196F3;
+}
+
 .footer__social-title {
   font-family: 'Roboto';
   font-style: normal;

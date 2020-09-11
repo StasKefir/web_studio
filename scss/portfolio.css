@@ -40,6 +40,7 @@
   color: #212121;
   background-color: #F5F4FA;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter__item_active {
@@ -69,7 +70,11 @@
 
 .works-list__item {
   border: 1px solid #EEEEEE;
-  margin-bottom: 30px;
+  margin: 0px 5px 30px 5px;
+}
+
+.works-list__item_disable {
+  display: none;
 }
 
 .works-list__title {
@@ -99,16 +104,28 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .works-list__item {
     display: inline-block;
-    width: 47.96%;
+    width: calc(100%/3);
   }
   .works-list__item img {
     width: 100%;
+  }
+  .works-list__item_disable {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .works-list__item {
+    width: 31.62%;
+  }
+  .works-list__item img {
+    width: 100%;
+  }
+  .works-list__item_disable {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

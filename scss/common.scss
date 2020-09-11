@@ -23,6 +23,7 @@ $black-shadow-color: rgba(0, 0, 0, 0.15);
         width: 73.125vw;
     }
 }
+
 a {
     text-decoration: none;
 }
@@ -201,6 +202,7 @@ a {
         margin-right: 8px;
         background-image: url(../icons/menu__letter.svg);
     }
+
     &__adress-phone::before {
         content: "";
         display: inline-block;
@@ -208,6 +210,8 @@ a {
         height: 14px;
         margin-right: 8px;
         background-image: url(../icons/menu__smartphone.svg);
+
+        // @media    
     }
 }
 
@@ -249,6 +253,7 @@ a {
             height: 100%;
             display: flex;
         }
+
         &__list {
             width: 56.97%;
             display: flex;
@@ -270,12 +275,13 @@ a {
             font-size: 12px;
             line-height: 14px;
         }
-        
+
         &__adress:nth-child(1) {
             margin-bottom: 10px;
         }
     }
 }
+
 @media screen and (min-width: 1600px) {
     .menu {
 
@@ -284,7 +290,7 @@ a {
         }
 
         &__logo {
-           width: 100%;
+            width: 100%;
         }
 
         &__text {
@@ -305,7 +311,8 @@ a {
             align-items: center;
         }
 
-        &__adress:hover, &__adress:focus {
+        &__adress:hover,
+        &__adress:focus {
             color: $accent-color;
         }
 
@@ -316,6 +323,7 @@ a {
 
     }
 }
+
 .footer {
 
     background-color: $footer-bg;
@@ -399,6 +407,11 @@ a {
         margin: 0 5px;
     }
 
+    &__social-item:hover,
+    &__social-item:focus {
+        background-color: $accent-color;
+    }
+
     &__social-title {
         font-family: 'Roboto';
         font-style: normal;
@@ -417,7 +430,8 @@ a {
         flex-direction: column;
         align-items: center;
 
-    } 
+    }
+
     &__input-group {
         width: 100%;
         text-align: center;
@@ -433,7 +447,7 @@ a {
         border-radius: 4px;
         padding-left: 16px;
         margin-bottom: 20px;
-        
+
     }
 
     &__subscribe-btn {
@@ -474,7 +488,8 @@ a {
             justify-content: space-between;
         }
 
-        &__adress, &__social {
+        &__adress,
+        &__social {
             width: 48%;
         }
 
@@ -483,10 +498,11 @@ a {
         }
 
         &__input-group {
-        width: 100%;
+            width: 100%;
         }
     }
 }
+
 @media screen and (min-width: 1600px) {
     .footer {
         &__container {
@@ -498,7 +514,8 @@ a {
             width: 50%;
         }
 
-        &__adress, &__social {
+        &__adress,
+        &__social {
             width: 48%;
         }
 
@@ -508,6 +525,7 @@ a {
             justify-content: space-between;
             align-items: flex-end;
         }
+
         &__input-group {
             width: 62.807%;
         }

@@ -38,11 +38,11 @@
         <section class="filter">
             <div class="container filter__container">
                 <ul class="filter__list">
-                    <li class="filter__item filter__item_active">Все</li>
-                    <li class="filter__item">Веб-сайты</li>
-                    <li class="filter__item">Приложения</li>
-                    <li class="filter__item">Дизайн</li>
-                    <li class="filter__item">Маркетинг</li>
+                    <li data-category="all" class="filter__item filter__item_active">Все</li>
+                    <li data-category="web" class="filter__item">Веб-сайты</li>
+                    <li data-category="application" class="filter__item">Приложения</li>
+                    <li data-category="design" class="filter__item">Дизайн</li>
+                    <li data-category="marketing" class="filter__item">Маркетинг</li>
                 </ul>
             </div>
         </section>
@@ -50,63 +50,63 @@
             <div class="container">
                 <h1 style="display: none;">наши работы</h1>
                 <ul class="works__list works-list">
-                    <li class="works-list__item">
+                    <li data-category="web" class="works-list__item">
                         <a href="">
                             <img src="./img/porfolio-tech-krak.jpg" alt="Технокряк">
                             <h2 class="works-list__title">Технокряк</h2>
                             <p class="works-list__category">Веб-сайт</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="design" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/portfolio-poster-new-orlean.jpg" alt="New Orlean Постер">
                             <h2 class="works-list__title">Постер New Orlean vs Golden Star</h2>
                             <p class="works-list__category">Дизайн</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="application" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/porfolio-seafood.jpg" alt="Ресторан логотип">
                             <h2 class="works-list__title">Ресторан Seafood</h2>
                             <p class="works-list__category">Приложение</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="marketing" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/porfolio-prime.jpg" alt="Prime лого">
                             <h2 class="works-list__title">Проект Prime</h2>
                             <p class="works-list__category">Маркетинг</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="application" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/porfolio-boxes.jpg" alt="Boxes лого">
                             <h2 class="works-list__title">Проект Boxes</h2>
                             <p class="works-list__category">Приложение</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="web" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/porfolio-inspiration.jpg" alt="Мокап">
                             <h2 class="works-list__title">Inspiration has no Borders</h2>
                             <p class="works-list__category">Веб-сайт</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="design" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/porfolio-limited-edition.jpg" alt="Limited Edition Мокап">
                             <h2 class="works-list__title">Издание Limited Edition</h2>
                             <p class="works-list__category">Дизайн</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="marketing" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/porfolio-lab.jpg" alt="LAB мокап">
                             <h2 class="works-list__title">Проект LAB</h2>
                             <p class="works-list__category">Маркетинг</p>
                         </a>
                     </li>
-                    <li class="works-list__item">
+                    <li data-category="application" class="works-list__item">
                         <a href="https://google.com">
                             <img src="./img/portfolio-gorwing-business.jpg" alt="Growing Business мокап">
                             <h2 class="works-list__title">Growing Business</h2>
@@ -132,19 +132,19 @@
                 <div class="footer__social">
                     <h3 class="footer__social-title">присоединяйтесь</h3>
                     <ul class="footer__social-list">
-                        <li class="footer__social-item"><a href="">
+                        <li class="footer__social-item"><a class="footer__social-link" href="">
                                 <img src="./icons/footer__instagram.svg" alt="">
                             </a>
                         </li>
-                        <li class="footer__social-item"><a href="">
+                        <li class="footer__social-item"><a class="footer__social-link" href="">
                                 <img src="./icons/footer__twitter.svg" alt="">
                             </a>
                         </li>
-                        <li class="footer__social-item"><a href="">
+                        <li class="footer__social-item"><a class="footer__social-link" href="">
                                 <img src="./icons/footer__facebook.svg" alt="">
                             </a>
                         </li>
-                        <li class="footer__social-item"><a href="">
+                        <li class="footer__social-item"><a class="footer__social-link" href="">
                                 <img src="./icons/footer__linkedin.svg" alt="">
                             </a>
                         </li>
@@ -152,8 +152,10 @@
                 </div>
             </div>
             <div class="footer__subscribe">
-                <h3 class="footer__social-title">Подпишитесь на рассылку</h3>
-                <input class="footer__subscribe-input" type="email" placeholder="E-mail">
+                <div class="footer__input-group">
+                    <h3 class="footer__social-title">Подпишитесь на рассылку</h3>
+                    <input class="footer__subscribe-input" type="email" placeholder="E-mail">
+                </div>
                 <a href="" class="footer__subscribe-btn">Подписаться</a>
             </div>
         </div>
